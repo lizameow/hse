@@ -3,4 +3,4 @@
 ## 
 # Домашнее задание по теме "head"
 # Домашнее задание по теме "таблицы"
-## https://lizameow.github.io/hse/homework/tables.4.1.html
+## https://lizameow.github.io/hse/homework/tables.html
