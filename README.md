@@ -5,3 +5,5 @@
 ## https://lizameow.github.io/hse/homework/head.html
 # Домашнее задание по теме "таблицы"
 ## https://lizameow.github.io/hse/homework/tables.html
+
+## https://lizameow.github.io/hse/homework/function.html
