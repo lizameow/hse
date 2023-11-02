@@ -6,4 +6,4 @@
 # Домашнее задание по теме "таблицы"
 ## https://lizameow.github.io/hse/homework/tables.html
 
-## https://lizameow.github.io/hse/homework/function.html
+## https://lizameow.github.io/hse/homework/js/function.html
