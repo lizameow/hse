@@ -7,5 +7,5 @@
 ## https://lizameow.github.io/hse/homework/tables.html
 
 ## https://lizameow.github.io/hse/homework/js/function.html
-.
-https://lizameow.github.io/hse/кр1/index.html
+# Контрольная работа
+## https://lizameow.github.io/hse/кр1/index.html — сайт 
