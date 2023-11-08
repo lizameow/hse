@@ -10,3 +10,5 @@
 ## https://lizameow.github.io/hse/кр1/index.html — сайт 
 
 ## https://lizameow.github.io/hse/passport/index.html — паспорт
+
+## https://lizameow.github.io/hse/algorythm/index.html — задача
