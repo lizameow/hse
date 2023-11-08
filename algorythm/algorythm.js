@@ -18,20 +18,7 @@ function verify() {
     }
 }
 
-function send() {
-    if (check) {
-        let texCondition = document.getElementsByTagName('p')[0].innerText
-        document.getElementsByName('formulation')[0].value = textCondition;
-        document.getElementsByName('result')[0].value = result;
-        document.getElementById('UserEnter').submit();
-}
-}
 
-function verify_send() {
-  verify();
-  send();
-
-}
 
 let messageText = document.getElementById("result").innerText
 console.log(messageText)
