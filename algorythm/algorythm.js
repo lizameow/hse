@@ -1,7 +1,9 @@
 function verify() {
+    console.log("S, R, K")
     let S = parseInt(document.getElementById('S').value);
     let R = parseInt(document.getElementById('R').value);
     let K = parseInt(document.getElementById('K').value);
+    console.log(S, R, K)
 
     if (Math.sqrt(S) - 2 * R >= K) {
         result = "Можно разместить сцену в зале.";
@@ -18,14 +20,23 @@ function verify() {
 
 function send() {
     if (check) {
-        document.getElementsByName('formulation')[0].value = result;
+        let texCondition = document.getElementsByTagName('p')[0].innerText
+        document.getElementsByName('formulation')[0].value = textCondition;
+        document.getElementsByName('result')[0].value = result;
         document.getElementById('UserEnter').submit();
-    } else {
-        alert("Есть недостатки. Повторите ввод");
-    }
+}
 }
 
-let messageText;
+function verify_send() {
+  verify();
+  send();
+
+}
+
+let messageText = document.getElementById("result").innerText
+console.log(messageText)
+let result;
+let check = false;
 
 const elementK = document.getElementById("K");
 elementK.addEventListener('input', verify);
@@ -38,8 +49,3 @@ elementR.addEventListener('keyup', verify);
 
 const elementSend = document.getElementById("send");
 elementSend.addEventListener('click', send);
-
-const elementVerify = document.getElementById("verify");
-elementVerify.addEventListener('click', verify);
-
-messageText = document.getElementById("result").innerText;
