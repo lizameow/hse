@@ -12,3 +12,6 @@
 ## https://lizameow.github.io/hse/passport/index.html — паспорт
 
 ## https://lizameow.github.io/hse/algorythm/index.html — задача
+
+# Контрольная работа 2
+## https://lizameow.github.io/hse/кр2/index.html
