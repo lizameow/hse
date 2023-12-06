@@ -15,3 +15,4 @@
 
 # Контрольная работа 2
 ## https://lizameow.github.io/hse/кр2/index.html
+## https://lizameow.github.io/hse/кр2/link/index.html
