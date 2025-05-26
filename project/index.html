@@ -1,1 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Депортация глазами ребёнка в СССР</title>
+    <style>
+        body {
+            background-color: #455219;
+            color: #e8e1cd;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.7;
+        }
 
+        .header {
+            text-align: center;
+            margin: 80px 0 50px;
+        }
+
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #ffa500;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+            width: fit-content;
+            padding-right: 10px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        @keyframes typing { from { width: 0 } to { width: 100% } }
+        @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #ffa500; } }
+
+        .intro {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(0,0,0,0.25);
+            border: 1px solid #70653e;
+            position: relative;
+            box-shadow: 0 0 30px rgba(0,0,0,0.2);
+        }
+
+        .heroes-section {
+            max-width: 1200px;
+            margin: 80px auto;
+        }
+
+        .heroes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .dossier-card {
+            background: #2a271f url('data:image/svg+xml;utf8,<svg opacity="0.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="100" height="100" fill="none" stroke="%2370653e" stroke-width="2"/></svg>');
+            padding: 25px;
+            border: 1px solid #70653e;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .dossier-card::after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border: 1px solid rgba(255,165,0,0.3);
+            pointer-events: none;
+        }
+
+        .dossier-photo {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border: 3px solid #70653e;
+            margin-bottom: 20px;
+            filter: sepia(0.3) contrast(1.1);
+        }
+
+        .dossier-card h3 {
+            color: #ffa500;
+            margin: 0 0 15px;
+            font-size: 1.4em;
+            border-bottom: 1px dashed #70653e;
+            padding-bottom: 10px;
+        }
+
+        .timeline {
+            max-width: 800px;
+            margin: 100px auto;
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom,
+                rgba(255,255,255,0) 0%,
+                #ffa500 30%,
+                #ffa500 70%,
+                rgba(255,255,255,0) 100%);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            margin: 60px 0;
+            width: 45%;
+            padding: 25px;
+            background: #2a271f;
+            border: 1px solid #70653e;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) { margin-left: 55%; }
+        .timeline-item:nth-child(even) { margin-left: 0; }
+
+        .timeline-item::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: #ffa500;
+            position: absolute;
+            border-radius: 50%;
+            top: 25px;
+            box-shadow: 0 0 15px rgba(255,165,0,0.5);
+        }
+
+        .timeline-item:nth-child(odd)::before { left: -34px; }
+        .timeline-item:nth-child(even)::before { right: -34px; }
+
+        .map-container {
+            max-width: 1200px;
+            height: 700px;
+            margin: 100px auto;
+            border: 3px solid #70653e;
+            box-shadow: 0 0 40px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            margin: 80px 0;
+            font-size: 2.2em;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ffa500;
+        }
+
+        @media (max-width: 768px) {
+            .timeline-item { width: 90%; margin-left: 10% !important; }
+            .timeline-item::before { left: -34px !important; }
+            .typewriter { font-size: 1.8em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="typewriter">Депортация глазами ребёнка в СССР</h1>
+    </div>
+
+    <div class="intro">
+        <p>Исторические источники хранят детские воспоминания о вынужденном переселении. Истории детей - свидетельства того, как политические решения ломали судьбы целых поколений. Эти истории продолжают жить, напоминая о важности сохранения себя в любых обстоятельствах</p>
+    </div>
+
+    <div class="heroes-section">
+        <h2>Личные дела</h2>
+        <div class="heroes-grid">
+            <div class="dossier-card">
+                <img src="img.png" class="dossier-photo" alt="Фото">
+                <h3>Рейн Варе</h3>
+                <p>Родился в 1931 г. в Эстонии. Семья выслана в Сибирь в 1941 г. Жил в депортации с мамой и сестрой, отца расстреляли. Вёл дневник.</p>
+            </div>
+
+            <div class="dossier-card">
+                <img src="img_2.png" class="dossier-photo" alt="Фото">
+                <h3>Ирина Гессе</h3>
+                <p>Родилась в 1927 г. в Эстонии. Семья выслана в Сибирь в 1941 г. Жила в депортации с мамой и братом, отца расстреляли. Вела дневник.</p>
+            </div>
+
+            <div class="dossier-card">
+                <img src="img_6.png" class="dossier-photo" alt="Фото">
+                <h3>Яуритре Гринхоф</h3>
+                <p></p>
+            </div>
+
+            <div class="dossier-card">
+                <img src="img_4.png" class="dossier-photo" alt="Фото">
+                <h3>Зента Матере</h3>
+                <p>Родилась в 1926 г. в Латвии. Семья выслана в Сибирь в 1941 г. Жила в депортации с мамой и папой.</p>
+            </div>
+
+            <div class="dossier-card">
+                <img src="img_5.png" class="dossier-photo" alt="Фото">
+                <h3>Таливалдис Малкс</h3>
+                <p>написать</p>
+            </div>
+
+            <div class="dossier-card">
+                <img src="img_1.png" class="dossier-photo" alt="Фото">
+                <h3>Аушра Юшкайте-Вилкене</h3>
+                <p>Родилась в 1936 г. в Литве. Семья выслана в Сибирь в 1941 г. Жила в депортации с папой, мамой, братом и сестрой.</p>
+            </div>
+
+            <div class="dossier-card">
+                <img src="img_3.png" class="dossier-photo" alt="Фото">
+                <h3>Альгирдас Ласкявичюс</h3>
+                <p>Родился в 1932 г. в Литве. Семья выслана в Сибирь в 1941 г. Жил в депортации с мамой и сестрой.</p>
+            </div>
+
+        </div>
+
+        <div class="timeline">
+            <h2>Хронология событий</h2>
+            <div class="timeline-item">
+                <h3>Июнь 1941</h3>
+                <p>Первая массовая депортация. Более 15,000 человек вывезены за 3 дня</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Май 1948</h3>
+                <p>Операция "Весна": около 40,000 человек было арестовано и депортировано за 2 дня. </p>
+            </div>
+            <div class="timeline-item">
+                <h3>Март 1949</h3>
+                <p>Операция "Прибой": 90,000 человек депортированы за 72 часа</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Октябрь 1951</h3>
+                <p>Операция "Осень": более 16,000 человек из числа родственников ранее депортированных было выслано в Сибирь.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <iframe src="https://view.genially.com/6803cff6b9da0abe15f051ef/interactive-content-karta-derevni" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
